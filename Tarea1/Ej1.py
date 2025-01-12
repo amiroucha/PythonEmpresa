@@ -27,18 +27,43 @@ nombre = input("Como te llamas?: " )
 edad = int(input("Cuanto años tienes?: " ))
 print(nombre +" el próximo cumpleaños usted tendrá "+str(edad+1))
 Ejercicio 8------------------------------------------------
-
-Ejercicio 9------------------------------------------------
-
-"""
-
 total = int(input("Precio total de la cuenta: "))
 comensales = int(input("Numero de comensales: "))
 print("Precio a pagar cada comensal: "+ str(total/comensales))
+Ejercicio 9------------------------------------------------
+dias = int(input("Dame un numero de dias: "))
+if dias < 0:
+    print("Por favor, introduce un número positivo.")
+else:
+    horas = dias * 24
+    minutos = horas * 60
+    segundos = minutos * 60
+    print("En "+str(dias)+" dias hay "+str(horas)+" horas, "+str(minutos)+" minutos y "+str(segundos)+" segundos.")
+Ejercicio 10------------------------------------------------
+kilos = int(input("Cuantos kilos quieres convertir: "))
+print(str(kilos)+" kilos son :"+str(round((kilos*2.204),3))+ " libras")
+Ejercicio 11------------------------------------------------
+mayor100 = int(input("Introduce un numero mayor de 100 "))
 
+if mayor100 <= 100:
+    print("El numero debe de ser mayor de 100")
+else:
+    menor10 = int(input("Introduce un numero menor de 10 "))
+    if menor10 >=10:
+        print("El numero debe de ser menor de 10")
+    else:
+        print("El numero "+str(menor10)+" cabe "+str(mayor100//menor10)+" veces en el numero "+str(mayor100))
 
+Ejercicio 12-Proyecto------------------------------------------------
 
+"""
 
+nombre = input("Identificacion (nombre): " )
+totalVentas = float(input("Precio total de ventas de este mes: "))
+if totalVentas < 0:
+    print("Ventas negativas, no recibe nada. Contacte con nosotros.")
+else:
+    print("Vendedor "+nombre+": le corresponde "+str(totalVentas - round((totalVentas*0.13),2))+"€")
 
 
 
