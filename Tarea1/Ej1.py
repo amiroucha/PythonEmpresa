@@ -63,7 +63,7 @@ totalVentas = float(input("Precio total de ventas de este mes: "))
 if totalVentas < 0:
     print("Ventas negativas, no recibe nada. Contacte con nosotros.")
 else:
-    print("Vendedor "+nombre+": le corresponde "+str(totalVentas - round((totalVentas*0.13),2))+"€")
+    print("Hola "+nombre+", tu comisión por ventas es de "+str(round((totalVentas*0.13),2))+"€")
 
 
 
