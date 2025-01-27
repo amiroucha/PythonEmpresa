@@ -67,11 +67,7 @@ else:
 """
 
 
-numero1= int(input("Introduce un numero entre 10 y 20: "))
-if (numero1 >= 10) and (numero1 <= 20) :
-    print("Gracias")
-else:
-    print("Respuesta incorrecta")
+
 
 
 
