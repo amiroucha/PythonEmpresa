@@ -56,7 +56,7 @@ else:
 
 Ejercicio 12-Proyecto------------------------------------------------
 
-"""
+
 
 nombre = input("Identificacion (nombre): " )
 totalVentas = float(input("Precio total de ventas de este mes: "))
@@ -64,8 +64,14 @@ if totalVentas < 0:
     print("Ventas negativas, no recibe nada. Contacte con nosotros.")
 else:
     print("Hola "+nombre+", tu comisión por ventas es de "+str(round((totalVentas*0.13),2))+"€")
+"""
 
 
+numero1= int(input("Introduce un numero entre 10 y 20: "))
+if (numero1 >= 10) and (numero1 <= 20) :
+    print("Gracias")
+else:
+    print("Respuesta incorrecta")
 
 
 

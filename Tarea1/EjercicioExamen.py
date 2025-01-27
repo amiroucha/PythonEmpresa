@@ -1,0 +1,1 @@
+print("En la zona de '"+input("¿Donde vives?\n")+"' \nse puede hacer muy bien '"+input("¿Que te suele gustar hacer?\n")+"'")
