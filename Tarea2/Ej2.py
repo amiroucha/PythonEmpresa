@@ -97,7 +97,7 @@ else:
     palabra = palabra[1:]+palabra[0]+"ay"
 
 print(palabra.lower())
-"""
+---------------------------------------------------------------
 
 frase = input("Introduce una linea de tu cancion favorita: ")
 print("Longitud de la frase: "+str(len(frase)))
@@ -107,8 +107,13 @@ num2 = int(input("Introduce un numero final: "))
 frase = frase[num1:num2]
 print(frase)
 
+"""
 
-
+numero1= int(input("Introduce un numero entre 10 y 20: "))
+if (numero1 >= 10) and (numero1 <= 20) :
+    print("Gracias")
+else:
+    print("Respuesta incorrecta")
 
 
 
