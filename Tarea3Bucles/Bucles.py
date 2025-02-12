@@ -112,21 +112,6 @@ while numero < 6:
 print("El último número que ha introducido fue un  "+ str(numero))
 
 Ejercicio 047--------------------------------------------
-Pedir al usuario que introduzca un número y luego introduzca
-otro número. Sume dos números y luego pregunte si desea añadir
-otro número. Si «sí», pídales que introduzcan otro número y siga
-añadiendo números hasta que que no respondan «sí». Cuando el bucle
-se haya detenido, muestre el total.
-
-Ejercicio 048--------------------------------------------
-
-
-Ejercicio 049--------------------------------------------
-
-
-Ejercicio 050--------------------------------------------
-
-"""
 print("Se sumaran los numeros : ")
 numero = int(input("Introduce un numero 1 "))
 numero2 = int(input("Introduce un numero 2 "))
@@ -141,3 +126,24 @@ while respuesta == "si":
     else:
         respuesta = "no"
 print("Total "+ str(total))
+
+Ejercicio 048--------------------------------------------
+total = 0
+respuesta ="si"
+while respuesta == "si":
+    nombre = input("A quien quieres invitar: ")
+    print(nombre + " ha sido invitado ")
+    total = 1 + total
+    respuesta = input("Quieres añadir a alguien mas? si/no ").lower()
+    if respuesta != "si":
+        break
+print("Total "+ str(total))
+
+
+Ejercicio 049--------------------------------------------
+
+
+Ejercicio 050--------------------------------------------
+
+"""
+
