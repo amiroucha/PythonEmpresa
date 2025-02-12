@@ -52,19 +52,20 @@ for _ in range(5):
         total += numeroUsu
 print("Total: "+str(total))
 Ejercicio 043--------------------------------------------
-    COMPROBAR EL NUMERO 43  SJDFNDSNFDJFNJDNSJNFÑKDNFSÑKFÑ
-direccion = print(input("Direccion en la que quieres contar(arriba/abajo): "))
-
+direccion = input("Direccion en la que quieres contar(arriba/abajo): ")
 if direccion == "arriba":
     numero = int(input("Introduzca un numero superior a 1: "))
-    for _ in range(numero):
-        print(numero)
-        numero = numero + 1
+    i = 1
+    for _ in range(1, numero+1):
+        print(0+i)
+        i = i + 1
 elif direccion == "abajo":
     numero = int(input("Introduzca un numero inferior a 20: "))
     if numero < 20:
-        for _ in range(numero):
-            print(numero)
+        i = 0
+        for _ in range(numero+1):
+            print(20-i)
+            i = i+1
     else:
         print("Debe ser un numero inferior a 20")
 else:
@@ -81,5 +82,62 @@ if numeroUsu < 10:
 else:
     for _ in range(3):
         print("Demasiadas personas")
-"""
 
+Ejercicio 044--------------------------------------------
+numeroUsu = int(input("personas a invitar en la fiesta: "))
+
+if numeroUsu < 10:
+    for _ in range(numeroUsu):
+        nombre = input("Nombre del persona: ")
+        print(nombre+" ha sido invitado")
+else:
+    for _ in range(3):
+        print("Demasiadas personas")
+
+
+BUCLE WHILE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Ejercicio 045--------------------------------------------
+total = 0
+while total < 50:
+    numero = int(input("Introduce un numero "))
+    total = numero +total
+    print("El total es "+ str(total))
+
+Ejercicio 046--------------------------------------------
+numero = 0
+while numero < 6:
+    numero = int(input("Introduce un numero "))
+
+print("El último número que ha introducido fue un  "+ str(numero))
+
+Ejercicio 047--------------------------------------------
+Pedir al usuario que introduzca un número y luego introduzca
+otro número. Sume dos números y luego pregunte si desea añadir
+otro número. Si «sí», pídales que introduzcan otro número y siga
+añadiendo números hasta que que no respondan «sí». Cuando el bucle
+se haya detenido, muestre el total.
+
+Ejercicio 048--------------------------------------------
+
+
+Ejercicio 049--------------------------------------------
+
+
+Ejercicio 050--------------------------------------------
+
+"""
+print("Se sumaran los numeros : ")
+numero = int(input("Introduce un numero 1 "))
+numero2 = int(input("Introduce un numero 2 "))
+total = numero + numero2
+
+respuesta ="si"
+while respuesta == "si":
+    respuesta = input("Deseas añadir otro numero? si/no ").lower()
+    if respuesta == "si":
+        numero = int(input("Introduce un numero "))
+        total = numero + total
+    else:
+        respuesta = "no"
+print("Total "+ str(total))
