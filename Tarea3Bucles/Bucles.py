@@ -52,14 +52,34 @@ for _ in range(5):
         total += numeroUsu
 print("Total: "+str(total))
 Ejercicio 043--------------------------------------------
+    COMPROBAR EL NUMERO 43  SJDFNDSNFDJFNJDNSJNFÑKDNFSÑKFÑ
+direccion = print(input("Direccion en la que quieres contar(arriba/abajo): "))
 
+if direccion == "arriba":
+    numero = int(input("Introduzca un numero superior a 1: "))
+    for _ in range(numero):
+        print(numero)
+        numero = numero + 1
+elif direccion == "abajo":
+    numero = int(input("Introduzca un numero inferior a 20: "))
+    if numero < 20:
+        for _ in range(numero):
+            print(numero)
+    else:
+        print("Debe ser un numero inferior a 20")
+else:
+    print("No entiendo")
 
+Ejercicio 043--------------------------------------------
+    COMPROBAR EL NUMERO 43  SJDFNDSNFDJFNJDNSJNFÑKDNFSÑKFÑ
+numeroUsu = int(input("personas a invitar en la fiesta: "))
+
+if numeroUsu < 10:
+    for _ in range(10):
+        nombre = input("Nombre del persona: ")
+        print(nombre+" ha sido invitado")
+else:
+    for _ in range(3):
+        print("Demasiadas personas")
 """
-total = 0
-print("Tienes que introducir 5 numeros: ")
-for _ in range(5):
-    numeroUsu = int(input("Introduzca un numero: "))
-    si = input("Quieres añadirlo al total?(si / no): ")
-    if si == "si" or si == "Si" or si == "SI":
-        total += numeroUsu
-print("Total: "+str(total))
+
