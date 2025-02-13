@@ -138,12 +138,51 @@ while respuesta == "si":
     if respuesta != "si":
         break
 print("Total "+ str(total))
-
-
 Ejercicio 049--------------------------------------------
-
-
+compnum = 50
+contador = 0
+while compnum < 100:
+    numero = int(input("Adivina el valor de compnum: "))
+    if numero > compnum:
+        print("Demasiado alto. Intentalo de nuevo")
+        contador= contador +1
+    elif numero < compnum:
+        print("Demasiado bajo. Intentalo de nuevo")
+        contador = contador + 1
+    else:
+        break
+print("Bien hecho, lo has hecho en "+ str(contador+1)+" intentos.")
 Ejercicio 050--------------------------------------------
+numero = 0
+while numero < 10 or numero>20:
+    numero = int(input("introduce un numero entre el 10 y el 20: "))
+    if numero <= 9:
+        print("Demasiado bajo.")
+    elif numero >=19:
+        print("Demasiado alto .")
+    else:
+        print("Gracias")
+Ejercicio 051--------------------------------------------
+
+
+RANDOM´.....................................................................
+............................................................................
+............................................................................
+Ejercicio 052--------------------------------------------
+import random
+
+listaFruta = ["manzana", "pera", "platano", "banana", "uva" ]
+numero = random.randint(1,5)
+print(listaFruta[numero])
+
+Ejercicio 053--------------------------------------------
+
+Ejercicio 054--------------------------------------------
+
 
 """
+import random
 
+listaFruta = ["manzana", "pera", "platano", "banana", "uva" ]
+numero = random.randint(1,5)
+print(listaFruta[numero])
