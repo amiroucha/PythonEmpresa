@@ -170,19 +170,24 @@ RANDOM´.....................................................................
 ............................................................................
 Ejercicio 052--------------------------------------------
 import random
+numero = random.randint(1,100)
+print(numero)
+
+Ejercicio 053--------------------------------------------
+import random
 
 listaFruta = ["manzana", "pera", "platano", "banana", "uva" ]
 numero = random.randint(1,5)
 print(listaFruta[numero])
-
-Ejercicio 053--------------------------------------------
 
 Ejercicio 054--------------------------------------------
 
 
 """
 import random
+respuestaUsu = input("Introduce cara o cruz")
+caracruz = ["cara", "cruz"]
+numero = random.randint(1,2)
 
-listaFruta = ["manzana", "pera", "platano", "banana", "uva" ]
-numero = random.randint(1,5)
-print(listaFruta[numero])
+if numero == 1 and respuestaUsu == "cara":
+    print()
