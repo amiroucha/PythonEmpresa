@@ -231,8 +231,6 @@ for _ in range(5):
         puntuacion += 1
 print("Puntuacion de 5 preguntas: "+str(puntuacion))
 Ejercicio 058--------------------------------------------
-
-"""
 import random
 colores = ["rojo", "azul", "verde", "amarillo", "morado"]
 colorOk = random.choice(colores)
@@ -243,3 +241,4 @@ while True:
         break
     else:
         print("Seguro que ahora te sientes "+colorOk.upper())
+"""
