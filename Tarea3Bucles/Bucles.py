@@ -181,13 +181,65 @@ numero = random.randint(1,5)
 print(listaFruta[numero])
 
 Ejercicio 054--------------------------------------------
+opcion = random.choice(['h', 't'])
+eleccion = input("Elige cara (h) o cruz (t): ").lower()
+if eleccion == opcion:
+    print("Ganas")
+else:
+    print("Mala suerte")
+if opcion == "h":
+    print("El ordenador eligió cara")
+else:
+    print("El ordenador eligió cruz")
 
+Ejercicio 055--------------------------------------------
+import random
+numero = random.randint(1, 5)
+print(numero)
+intento = int(input("Elige un número entre 1 y 5: "))
+if intento == numero:
+    print("Bien hecho")
+else:
+    if intento > numero:
+        print("Demasiado alto")
+    else:
+       print("Demasiado bajo")
+    intento2 = int(input("Introduce un 2 numero: "))
+    print("Correcto" if intento2 == numero else "Has perdido")
+
+Ejercicio 056--------------------------------------------
+import random
+numero = random.randint(1, 10)
+while True:
+    intento = int(input("Introduce un número entre 1 y 10: "))
+    if intento == numero:
+        print("Numero correcto")
+        break
+    else:
+        print("Numero incorrecto. Sigue intentando...")
+        print("Demasiado alto" if intento > numero else "Demasiado bajo")
+
+Ejercicio 057--------------------------------------------
+import random
+
+puntuacion = 0
+for _ in range(5):
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    respuesta = int(input("¿Cuánto es "+str(num1)+" + "+str(num2)+"?    "))
+    if respuesta == num1 + num2:
+        puntuacion += 1
+print("Puntuacion de 5 preguntas: "+str(puntuacion))
+Ejercicio 058--------------------------------------------
 
 """
 import random
-respuestaUsu = input("Introduce cara o cruz")
-caracruz = ["cara", "cruz"]
-numero = random.randint(1,2)
-
-if numero == 1 and respuestaUsu == "cara":
-    print()
+colores = ["rojo", "azul", "verde", "amarillo", "morado"]
+colorOk = random.choice(colores)
+while True:
+    eleccion = input("Elige un color "+str(colores)+" : ").lower()
+    if eleccion == colorOk:
+        print("Bien hecho")
+        break
+    else:
+        print("Seguro que ahora te sientes "+colorOk.upper())
