@@ -163,6 +163,23 @@ while numero < 10 or numero>20:
     else:
         print("Gracias")
 Ejercicio 051--------------------------------------------
+botellas = 10
+while botellas > 0:
+    print("Hay "+str(botellas)+" botellas verdes colgadas en la pared, ")
+    print(str(botellas)+" botellas verdes colgadas en la pared, ")
+    print("y si 1 botella verde se cae accidentalmente...")
+
+    while True:
+        respuesta = input("¿Cuántas botellas verdes habrá colgadas en la pared? ")
+
+        if respuesta.isdigit() and int(respuesta) == botellas - 1:
+            botellas -= 1
+            print("Habrá "+str(botellas)+" botellas verdes colgadas en la pared.\n")
+            break
+        else:
+            print("No, inténtalo de nuevo.")
+
+print("Ya no hay botellas verdes colgadas en la pared.")
 
 
 RANDOM´.....................................................................
